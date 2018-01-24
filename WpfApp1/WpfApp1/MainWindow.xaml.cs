@@ -32,13 +32,13 @@ namespace WpfApp1
           private void num1btn_Click(object sender, RoutedEventArgs e)
         {
             string buttonValue = ((Button)sender).Content.ToString();
-            ResultBox.Text = ResultBox.Text + ((Button)sender).Content;
+            resultBox.Text = resultBox.Text + ((Button)sender).Content;
             part1 = part1 + buttonValue;
         }
 
         private void plusbtn_Click(object sender, RoutedEventArgs e)
         {
-            ResultBox.Text = ResultBox.Text + "+";
+            resultBox.Text = resultBox.Text + "+";
             part2 = part1;
             part1 = "";
             action = "+";
@@ -51,23 +51,23 @@ namespace WpfApp1
 
         private void minusbtn_Click(object sender, RoutedEventArgs e)
         {
-            ResultBox.Text = ResultBox.Text + "+";
+            resultBox.Text = resultBox.Text + "+";
             part2 = part1;
             part1 = "";
             action = "-";
         }
-        private void Execute_Button_Click(object sender, RoutedEventArgs e)
+        private void executebtn_Button_Click(object sender, RoutedEventArgs e)
         {
             int part1num = int.Parse(part1);
             int part2num = int.Parse(part2);
             if (action == "+") {
-                ResultBox.Text = (part2num + part1num).ToString();
+               resultBox.Text = (part2num + part1num).ToString();
             }else if (action == "-")
             {
-                ResultBox.Text = (part2num - part1num).ToString();
+                resultBox.Text = (part2num - part1num).ToString();
             }
 
-            part1 = ResultBox.Text;
+            part1 = resultBox.Text;
         }
     }
 }
