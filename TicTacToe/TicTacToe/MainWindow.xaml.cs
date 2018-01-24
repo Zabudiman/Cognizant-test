@@ -40,9 +40,10 @@ namespace TicTacToe
             int y = int.Parse(coordinates[1].ToString());
 
             _player = !_player;
-            ((Button)sender).Content = _player == true ? "0" : "X";
+            ((Button)sender).Content = _player ? "0" : "X";
+            ((Button)sender).Foreground = _player ? Brushes.Blue : Brushes.Red;
         }
-
+        
         private void buttonClicked(object sender, ContextMenuEventArgs e)
         {
 
