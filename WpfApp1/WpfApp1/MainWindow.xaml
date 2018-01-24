@@ -11,7 +11,7 @@
             <ColumnDefinition Width="10*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="executebtn" Content="=" HorizontalAlignment="Left" Margin="188,224,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="executebtn" Content="=" HorizontalAlignment="Left" Margin="188,224,0,0" VerticalAlignment="Top" Width="75" Click="num1btn_Click"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="235,134,0,0" VerticalAlignment="Top" Height="13" Width="75"/>
         <Button x:Name="num1btn" Content="1" HorizontalAlignment="Left" Margin="28,155,0,0" VerticalAlignment="Top" Width="24" Height="22" Click="num1btn_Click"/>
         <Button x:Name="num2btn" Content="2" HorizontalAlignment="Left" Margin="76,155,0,0" VerticalAlignment="Top" Width="24" Height="22" Click="num1btn_Click"/>

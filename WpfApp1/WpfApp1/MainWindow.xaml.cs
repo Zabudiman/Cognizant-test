@@ -27,10 +27,7 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
-        private void Execute_Button_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
+        
 
           private void num1btn_Click(object sender, RoutedEventArgs e)
         {
@@ -58,6 +55,19 @@ namespace WpfApp1
             part2 = part1;
             part1 = "";
             action = "-";
+        }
+        private void Execute_Button_Click(object sender, RoutedEventArgs e)
+        {
+            int part1num = int.Parse(part1);
+            int part2num = int.Parse(part2);
+            if (action == "+") {
+                ResultBox.Text = (part2num + part1num).ToString();
+            }else if (action == "-")
+            {
+                ResultBox.Text = (part2num - part1num).ToString();
+            }
+
+            part1 = ResultBox.Text;
         }
     }
 }
