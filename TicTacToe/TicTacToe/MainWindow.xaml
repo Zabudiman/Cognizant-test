@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="400" Width="400">
+    <Grid ContextMenuClosing="buttonClicked">
+        <Button Content="" HorizontalAlignment="Left" Margin="49,33,0,0" VerticalAlignment="Top" Width="75" Height="74" RenderTransformOrigin="0.445,1.261" Tag="11" Click="buttonClicked"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="154,33,0,0" VerticalAlignment="Top" Width="75" Height="80" Tag="12" Click="buttonClicked"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="268,33,0,0" VerticalAlignment="Top" Width="75" Height="80" Tag="13" Click="buttonClicked"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="49,122,0,0" VerticalAlignment="Top" Width="75" Height="68" RenderTransformOrigin="0.523,0.884" Click="buttonClicked" Tag="21"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="154,122,0,0" VerticalAlignment="Top" Width="75" Height="68" Click="buttonClicked" Tag="22"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="268,122,0,0" VerticalAlignment="Top" Width="75" Height="68" Click="buttonClicked" Tag="23"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="49,207,0,0" VerticalAlignment="Top" Width="75" Height="74" Click="buttonClicked" Tag="31"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="154,208,0,0" VerticalAlignment="Top" Width="75" Height="71" Tag="32"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="268,210,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.686,0.507" Height="71" Click="buttonClicked" Tag="33"/>
+
     </Grid>
 </Window>
