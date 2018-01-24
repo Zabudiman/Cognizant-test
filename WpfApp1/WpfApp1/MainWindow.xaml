@@ -11,7 +11,7 @@
             <ColumnDefinition Width="10*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="executebtn" Content="=" HorizontalAlignment="Left" Margin="405,258,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="executebtn" Content="=" HorizontalAlignment="Left" Margin="188,224,0,0" VerticalAlignment="Top" Width="75"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="235,134,0,0" VerticalAlignment="Top" Height="13" Width="75"/>
         <Button x:Name="num1btn" Content="1" HorizontalAlignment="Left" Margin="28,155,0,0" VerticalAlignment="Top" Width="24" Height="22" Click="num1btn_Click"/>
         <Button x:Name="num2btn" Content="2" HorizontalAlignment="Left" Margin="76,155,0,0" VerticalAlignment="Top" Width="24" Height="22" Click="num1btn_Click"/>
@@ -23,6 +23,8 @@
         <Button x:Name="num8btn" Content="8" HorizontalAlignment="Left" Margin="76,251,0,0" VerticalAlignment="Top" Width="24" Height="22" RenderTransformOrigin="2.389,3.958" Click="num1btn_Click"/>
         <Button x:Name="num9btn" Content="9" HorizontalAlignment="Left" Margin="129,251,0,0" VerticalAlignment="Top" Width="24" Height="22" Click="num1btn_Click"/>
         <TextBox x:Name="ResultBox" HorizontalAlignment="Left" Height="23" Margin="28,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="479" Grid.ColumnSpan="2" IsEnabled="False" TextChanged="resultBox_TextChanged"/>
+        <Button x:Name="plusbtn" Content="+" HorizontalAlignment="Left" Margin="188,155,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.663,-0.224" Click="num1btn_Click"/>
+        <Button x:Name="minusbtn" Content="-" HorizontalAlignment="Left" Margin="188,187,0,0" VerticalAlignment="Top" Width="75" Click="num1btn_Click" RenderTransformOrigin="0.663,-0.224"/>
 
     </Grid>
 </Window>
