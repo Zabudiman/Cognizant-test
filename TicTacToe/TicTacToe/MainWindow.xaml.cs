@@ -30,9 +30,19 @@ namespace TicTacToe
 
         }
 
-        private bool _player = false; //false - x, true - 0
+        private enum Player
+        {
+            X = 1,
+            O = 2
+        }
 
-        private int[3, 3] _matrix = new
+        private Player _player = Player.O; //false - x, true - 0
+
+        private int[,] _matrix = new int[,] {
+            { 0, 0, 0 },
+            { 0, 0, 0 },
+            { 0, 0, 0 },
+        };
 
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
@@ -40,8 +50,8 @@ namespace TicTacToe
             int x = int.Parse(coordinates[0].ToString());
             int y = int.Parse(coordinates[1].ToString());
 
-            _player = !_player;
-            ((Button)sender).Content = _player ? "0" : "X";
+            _player = _player == Player.O ? Player.X : Player.O;
+            ((Button)sender).Content = _player == Player.O ? "0"; "X":
             ((Button)sender).Foreground = _player ? Brushes.Blue : Brushes.Red;
         }
         
