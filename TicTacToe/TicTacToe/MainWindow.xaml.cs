@@ -38,9 +38,12 @@ namespace TicTacToe
             int x = int.Parse(coordinates[0].ToString());
             int y = int.Parse(coordinates[1].ToString());
 
-            _player = _player == Player.O ? Player.X : Player.O;
-            ((Button)sender).Content = _player == Player.O ? "0": "X";
+
+            ((Button)sender).Content = _player == Player.O ? "0" : "X";
             ((Button)sender).Foreground = _player == Player.O ? Brushes.Blue : Brushes.Red;
+
+            _player = _player == Player.O ? Player.X : Player.O;
+            
         }
         
         private void buttonClicked(object sender, ContextMenuEventArgs e)
