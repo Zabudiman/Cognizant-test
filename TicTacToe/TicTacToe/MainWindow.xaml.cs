@@ -32,6 +32,7 @@ namespace TicTacToe
 
         private bool _player = false; //false - x, true - 0
 
+        private int[3, 3] _matrix = new
 
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
