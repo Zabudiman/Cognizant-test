@@ -1,0 +1,32 @@
+﻿<Window x:Class="DesktopCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopCalculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="332.38" Width="360.011">
+    <Grid Margin="0,0,2,3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="239*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="executeBtn" Content="=" HorizontalAlignment="Left" Margin="108,99,0,0" VerticalAlignment="Top" Width="32" RenderTransformOrigin="0.919,1.232" Click="executeBtn_Click" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="resultBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" IsEnabled="False" Grid.ColumnSpan="2"/>
+        <Button x:Name="num1btn" Content="1" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="25" Click="num1btn_Click"/>
+        <Button x:Name="num2btn" Content="2" HorizontalAlignment="Left" Margin="40,45,0,0" VerticalAlignment="Top" Width="25" Click="num1btn_Click"/>
+        <Button x:Name="num3btn" Content="3" HorizontalAlignment="Left" Margin="70,45,0,0" VerticalAlignment="Top" Width="25" Click="num1btn_Click"/>
+        <Button x:Name="num4btn" Content="4" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="25" Click="num1btn_Click"/>
+        <Button x:Name="num5btn" Content="5" HorizontalAlignment="Left" Margin="40,72,0,0" VerticalAlignment="Top" Width="25" Click="num1btn_Click"/>
+        <Button x:Name="num6btn" Content="6" HorizontalAlignment="Left" Margin="70,72,0,0" VerticalAlignment="Top" Width="25" Click="num1btn_Click"/>
+        <Button x:Name="num7btn" Content="7" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="25" Click="num1btn_Click"/>
+        <Button x:Name="num8btn" Content="8" HorizontalAlignment="Left" Margin="40,99,0,0" VerticalAlignment="Top" Width="25" Click="num1btn_Click"/>
+        <Button x:Name="num9btn" Content="9" HorizontalAlignment="Left" Margin="70,99,0,0" VerticalAlignment="Top" Width="25" Click="num1btn_Click"/>
+        <Button x:Name="plusbtn" Content="+" HorizontalAlignment="Left" Margin="108,45,0,0" VerticalAlignment="Top" Width="32" RenderTransformOrigin="0.919,1.232" Click="action_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="minusBtn" Content="-" HorizontalAlignment="Left" Margin="108,72,0,0" VerticalAlignment="Top" Width="32" RenderTransformOrigin="0.919,1.232" Click="action_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="num0btn" Content="0" HorizontalAlignment="Left" Height="25" Margin="10,127,0,0" VerticalAlignment="Top" Width="25" Click="num1btn_Click"/>
+        <Button x:Name="multiplyBtn" Content="*" HorizontalAlignment="Left" Height="20" Margin="33.571,45,0,0" VerticalAlignment="Top" Width="36" Click="action_Click" Grid.Column="1"/>
+        <Button x:Name="divideBtn" Content="/" HorizontalAlignment="Left" Height="20" Margin="33.571,72,0,0" VerticalAlignment="Top" Width="36" Click="action_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>

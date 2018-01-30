@@ -16,6 +16,7 @@
         <Button Content="" HorizontalAlignment="Left" Margin="49,207,0,0" VerticalAlignment="Top" Width="75" Height="74" Click="buttonClicked" Tag="31" FontSize="48" FontWeight="Bold"/>
         <Button Content="" HorizontalAlignment="Left" Margin="154,208,0,0" VerticalAlignment="Top" Width="75" Height="71" Tag="32" Click="buttonClicked" FontSize="48" FontWeight="Bold"/>
         <Button Content="" HorizontalAlignment="Left" Margin="268,210,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.686,0.507" Height="71" Click="buttonClicked" Tag="33" FontSize="48" FontWeight="Bold"/>
+        <Label x:Name="winnerLabel" Content="" HorizontalAlignment="Left" Height="23" Margin="124,308,0,0" VerticalAlignment="Top" Width="167"/>
 
     </Grid>
 </Window>

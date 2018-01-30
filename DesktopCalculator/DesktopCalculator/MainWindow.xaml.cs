@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace DesktopCalculator
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -41,21 +41,21 @@ namespace WpfApp1
             part1 = part1 + buttonValue;
         }
 
-        private void plusbtn_Click(object sender, RoutedEventArgs e)
+        private void action_Click(object sender, RoutedEventArgs e)
         {
-            resultBox.Text = resultBox.Text + "+";
+            resultBox.Text = resultBox.Text + ((Button)sender).Content.ToString();
             part2 = part1;
             part1 = "";
-            action = "+";
+            action = ((Button)sender).Content.ToString();
         }
 
-        private void minusBtn_Click(object sender, RoutedEventArgs e)
-        {
-            resultBox.Text = resultBox.Text + "-";
-            part2 = part1;
-            part1 = "";
-            action = "-";
-        }
+        //private void action_Click(object sender, RoutedEventArgs e)
+        //{
+        //    resultBox.Text = resultBox.Text + ((Button)sender).Content.ToString();
+        //    part2 = part1;
+        //    part1 = "";
+        //    action = "-";
+        //}
 
         private void executeBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -69,10 +69,26 @@ namespace WpfApp1
             {
                 resultBox.Text = (part2num - part1num).ToString();
             }
+            else if (action == "*")
+            {
+                resultBox.Text = (part2num * part1num).ToString();
+            }
+            else if (action == "/")
+            {
+                resultBox.Text = (part2num / part1num).ToString();
+            }
 
             part1 = resultBox.Text;
         }
 
-        
+        private void multiplyBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void divideBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
