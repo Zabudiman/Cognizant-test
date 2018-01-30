@@ -61,21 +61,10 @@ namespace DesktopCalculator
         {
             int part1num = int.Parse(part1);
             int part2num = int.Parse(part2);
-            switch (action)
-            {
-                case "+";
-                    resultBox.Text = (part2num + part1num).ToString();
-                    break;
-                case "-";
-                    resultBox.Text = (part2num - part1num).ToString();
-                    break;
-                case "*";
-                    resultBox.Text = (part2num * part1num).ToString();
-                    break;
-                case "/";
-                    resultBox.Text = (part2num / part1num).ToString();
-                    break;
-            }
+
+            Arithmetics arithmetics = new Arithmetics();
+            resultBox.Text = arithmetics.Calculate(part2num, part1num, action).ToString();
+           
             //if (action == "+")
             //{
             //    resultBox.Text = (part2num + part1num).ToString();
