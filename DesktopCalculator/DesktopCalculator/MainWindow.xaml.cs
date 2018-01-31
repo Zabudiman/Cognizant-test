@@ -49,50 +49,22 @@ namespace DesktopCalculator
             action = ((Button)sender).Content.ToString();
         }
 
-        //private void action_Click(object sender, RoutedEventArgs e)
-        //{
-        //    resultBox.Text = resultBox.Text + ((Button)sender).Content.ToString();
-        //    part2 = part1;
-        //    part1 = "";
-        //    action = "-";
-        //}
-
         private void executeBtn_Click(object sender, RoutedEventArgs e)
         {
             int part1num = int.Parse(part1);
             int part2num = int.Parse(part2);
 
             Arithmetics arithmetics = new Arithmetics();
-            resultBox.Text = arithmetics.Calculate(part2num, part1num, action).ToString();
-           
-            //if (action == "+")
-            //{
-            //    resultBox.Text = (part2num + part1num).ToString();
-            //}
-            //else if (action == "-")
-            //{
-            //    resultBox.Text = (part2num - part1num).ToString();
-            //}
-            //else if (action == "*")
-            //{
-            //    resultBox.Text = (part2num * part1num).ToString();
-            //}
-            //else if (action == "/")
-            //{
-            //    resultBox.Text = (part2num / part1num).ToString();
-            //}
+            try
+            {
+                resultBox.Text = arithmetics.Calculate(part2num, part1num, action).ToString();
+            }
+            catch (DivideByZeroException ex)
+            {
+                resultBox.Text = "Division by 0 not allowed!";
+            }
 
             part1 = resultBox.Text;
-        }
-
-        private void multiplyBtn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void divideBtn_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
