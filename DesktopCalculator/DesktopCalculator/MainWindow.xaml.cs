@@ -49,6 +49,8 @@ namespace DesktopCalculator
             action = ((Button)sender).Content.ToString();
         }
 
+
+
         private void executeBtn_Click(object sender, RoutedEventArgs e)
         {
             int part1num = int.Parse(part1);
@@ -65,6 +67,13 @@ namespace DesktopCalculator
             }
 
             part1 = resultBox.Text;
+        }
+
+        private void resetBtn_Click(object sender, RoutedEventArgs e)
+        {
+            resultBox.Text = "";
+            part1 = "";
+            part2 = "";
         }
     }
 }
