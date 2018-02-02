@@ -46,7 +46,10 @@ namespace DesktopCalculator
             resultBox.Text = resultBox.Text + ((Button)sender).Content.ToString();
             part2 = part1;
             part1 = "";
-            action = ((Button)sender).Content.ToString();
+         //   if (resultBox.EndsWith(action)) {
+         //   resultBox.TrimEnd((Button)sender).Content.ToString())
+         //} 
+           
         }
 
 
